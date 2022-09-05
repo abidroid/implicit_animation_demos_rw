@@ -25,6 +25,7 @@ class _AnimatedCarScreenState extends State<AnimatedCarScreen> {
         child: const Icon(Icons.play_arrow),
       ),
       body: Stack(
+
         children: [
           AnimatedPositioned(
             left: _left,
