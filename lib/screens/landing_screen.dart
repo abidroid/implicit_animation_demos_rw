@@ -5,6 +5,7 @@ import 'package:implicit_animation_demos_rw/screens/animated_positioned_screen.d
 import 'package:implicit_animation_demos_rw/screens/pulling_door_screen.dart';
 import 'package:implicit_animation_demos_rw/screens/pushing_door_screen.dart';
 import 'package:implicit_animation_demos_rw/screens/transform_rotate_screen.dart';
+import 'package:implicit_animation_demos_rw/screens/tween_animation_builder_screen.dart';
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({Key? key}) : super(key: key);
@@ -85,6 +86,17 @@ class _LandingScreenState extends State<LandingScreen> {
             onTap: (){
               Navigator.of(context).push(MaterialPageRoute(builder: (context){
                 return const PushingDoorScreen();
+              }));
+
+            },
+          ),
+
+          ListTile(
+            title: const Text('Tween Animation Builder'),
+            subtitle: const Text('360 degree rotation'),
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                return const TweenAnimationBuilderScreen();
               }));
 
             },
