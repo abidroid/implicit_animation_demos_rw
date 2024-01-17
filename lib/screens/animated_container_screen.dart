@@ -10,6 +10,7 @@ class AnimatedContainerScreen extends StatefulWidget {
 class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
 
   bool _boxShow = false;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
